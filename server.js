@@ -4,8 +4,14 @@ const path = require("path");
 
 const app = express();
 
-app.get("/", (req, res) => {
+app.use(express.static(path.join(__dirname, "./client/build")));
+
+app.get("/api", (req, res) => {
   res.send("Hello Kevin");
+});
+
+app.get("*", (req, res) => {
+  res.send(express.static(path.join(__dirname, "./client/build/index.html")));
 });
 
 const PORT = process.env.PORT || 5000;
