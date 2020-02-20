@@ -67,3 +67,20 @@ h1 {
 .nav-link {
   color: rgba(255, 255, 255, 0.8) !important;
 }
+.bg-main {
+  text-shadow: 4px 4px 4px black;
+  background-color: rgba(48, 128, 48, 1);
+}
+.bg-main-bright {
+  text-shadow: 4px 4px 4px black;
+  background-color: rgba(64, 176, 80, 1);
+}
+
+.text-color {
+  color: #308030;
+  background: #d0d0d0;
+}
+.full-screen {
+  height: 100vh;
+  width: 100vw;
+}

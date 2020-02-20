@@ -1,7 +1,11 @@
 import React, { Fragment } from "react";
 import Introduction from "../layouts/Introduction";
 
-import "../../assets/css/Landing.css";
+import "../../assets/css/Home.css";
+import "../../assets/css/Home-sm.css";
+import "../../assets/css/Home-md.css";
+import "../../assets/css/Home-lg.css";
+import "../../assets/css/Home-xl.css";
 
 const Home = () => {
   return (

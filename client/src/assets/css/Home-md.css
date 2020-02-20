@@ -1,0 +1,179 @@
+/* Medium */
+@media (min-width: 768px) {
+  .kevbot-container img {
+    margin: 0 auto;
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+  }
+  #kevbot-0 .text-div {
+    height: 150px;
+  }
+  #kevbot-1 .text-div,
+  #kevbot-2 .text-div,
+  #kevbot-3 .text-div,
+  #kevbot-4 .text-div {
+    height: 80px;
+  }
+
+  .kevbot-intro {
+    background-color: rgba(208, 208, 208, 0.2);
+    border: 10px outset rgba(164, 144, 108, 0.83);
+    border-radius: 20px;
+  }
+  .kevbot-intro p {
+    font-size: 0.9em;
+    line-height: 1.2em;
+    font-weight: bold;
+  }
+
+  #kevbot-0 {
+    width: 350px;
+    animation: rotation 0.5s linear 0s 5 normal forwards running,
+      location0 25s linear 0s 1 normal forwards running;
+  }
+
+  #kevbot-1 {
+    width: 350px;
+    animation: rotation 0.5s linear 5s 5 normal forwards running,
+      location1 25s linear 0s 1 normal forwards running;
+  }
+  #kevbot-2 {
+    width: 350px;
+    animation: rotation 0.5s linear 10s 5 normal forwards running,
+      location2 25s linear 0s 1 normal forwards running;
+  }
+  #kevbot-3 {
+    width: 350px;
+    animation: rotation 0.5s linear 15s 5 normal forwards running,
+      location3 25s linear 0s 1 normal forwards running;
+  }
+  #kevbot-4 {
+    width: 350px;
+    animation: rotation 0.5s linear 20s 5 normal forwards running,
+      location4 25s linear 0s 1 normal forwards running;
+  }
+
+  @keyframes location0 {
+    0% {
+      top: 0;
+      left: 100vw;
+    }
+    5% {
+      top: 95vh;
+      left: 30vw;
+    }
+    10% {
+      top: 15vh;
+      left: 2vw;
+    }
+    100% {
+      top: 15vh;
+      left: 2vw;
+    }
+  }
+  @keyframes location1 {
+    0% {
+      top: 100vh;
+      left: 150vw;
+    }
+    19% {
+      top: 100vh;
+      left: 150vw;
+    }
+    20% {
+      top: 100vh;
+      left: 100vw;
+    }
+    25% {
+      top: 0vh;
+      left: 60vw;
+    }
+    30% {
+      top: 50vh;
+      left: 2vw;
+    }
+    100% {
+      top: 50vh;
+      left: 2vw;
+    }
+  }
+  @keyframes location2 {
+    0% {
+      top: 100vh;
+      left: -100vw;
+    }
+    39% {
+      top: 100vh;
+      left: -100vw;
+    }
+    40% {
+      top: 100vh;
+      left: 0;
+    }
+    45% {
+      top: 0vh;
+      left: 60vw;
+    }
+    50% {
+      top: 50vh;
+      left: 52vw;
+    }
+    100% {
+      top: 50vh;
+      left: 52vw;
+    }
+  }
+  @keyframes location3 {
+    0% {
+      top: 100vh;
+      left: 120vw;
+    }
+    59% {
+      top: 100vh;
+      left: 120vw;
+    }
+    60% {
+      top: 100vh;
+      left: 100vw;
+    }
+    65% {
+      top: 0;
+      left: 30vw;
+    }
+    70% {
+      top: 75vh;
+      left: 2vw;
+    }
+    100% {
+      top: 75vh;
+      left: 2vw;
+    }
+  }
+  @keyframes location4 {
+    0% {
+      top: 100vh;
+      left: -100vw;
+    }
+    79% {
+      top: 100vh;
+      left: -100vw;
+    }
+    80% {
+      top: 100vh;
+      left: 0;
+    }
+    85% {
+      top: 0vh;
+      left: 60vw;
+    }
+    90% {
+      top: 75vh;
+      left: 52vw;
+    }
+    100% {
+      top: 75vh;
+      left: 52vw;
+    }
+  }
+}
