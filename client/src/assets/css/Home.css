@@ -30,7 +30,7 @@
   object-fit: contain;
 }
 #kevbot-0 .text-div {
-  height: 150px;
+  height: 160px;
 }
 #kevbot-1 .text-div,
 #kevbot-2 .text-div,
@@ -57,7 +57,7 @@
 }
 
 #kevbot-0 {
-  width: 190px;
+  width: 195px;
   animation: rotation 0.5s linear 0s 5 normal forwards running,
     location0 25s linear 0s 1 normal forwards running;
 }

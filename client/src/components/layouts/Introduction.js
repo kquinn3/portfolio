@@ -9,7 +9,7 @@ import imgKevbot4 from "../../assets/img/babyme_cropped.jpg";
 const Introduction = () => {
   const [kevbot, setKevbot] = useState(["", "", "", "", ""]);
   const txtBot = [
-    "Hello, my name is Kevin Quinn. I'm a problem solver. Most of my solutions involve web applications. While I work, my bots will guide you through my site. Let's meet them.",
+    "Hello, my name is Kevin Quinn. I'm a problem solver. Most of my solutions involve web applications. While I work, my bots will guide you through my site. If you click on them you will go to the page. Let's meet them.",
     "I am Kevbot1. You can call me Ace. I will guide you through Kevin's software skills ",
     "I am Kevbot2. You can call me Deuce. I will guide you through some of Kevin's projects at KPQ Solutions ",
     "I am Kevbot3. You can call me Trey. I will guide you through Kevin's other professional projects ",
@@ -50,24 +50,28 @@ const Introduction = () => {
         IMG={imgKevbot1}
         ALT="Kevin in green shirt"
         TXT={kevbot[1]}
+        LINK={"/skills"}
       />
       <Kevbot
         ID="kevbot-2"
         IMG={imgKevbot2}
         ALT="Kevin in white shirt"
         TXT={kevbot[2]}
+        LINK={"/kpq"}
       />
       <Kevbot
         ID="kevbot-3"
         IMG={imgKevbot3}
         ALT="Kevin at Hilton Head"
         TXT={kevbot[3]}
+        LINK={"/projects"}
       />
       <Kevbot
         ID="kevbot-4"
         IMG={imgKevbot4}
         ALT="Kevin as a young child"
         TXT={kevbot[4]}
+        LINK={"/information"}
       />
     </Fragment>
   );
