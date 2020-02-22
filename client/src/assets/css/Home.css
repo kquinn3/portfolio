@@ -20,6 +20,10 @@
   z-index: -1;
 }
 
+.kevbot-container a {
+  text-decoration: none;
+}
+
 .kevbot-container {
   position: absolute;
 }
@@ -32,17 +36,24 @@
 #kevbot-0 .text-div {
   height: 160px;
 }
+
 #kevbot-1 .text-div,
 #kevbot-2 .text-div,
 #kevbot-3 .text-div,
 #kevbot-4 .text-div {
-  height: 150px;
+  height: 130px;
 }
 
 .kevbot-intro {
-  background-color: rgba(208, 208, 208, 0.2);
-  border: 10px outset rgba(164, 144, 108, 0.83);
-  border-radius: 20px;
+  background-color: rgba(208, 208, 208, 1);
+  /* border: 1em solid #a4906c; */
+  border-top: solid #605040 0.5em;
+  border-left: solid #605040 0.5em;
+  /* border-left: solid #a4906c 1em; */
+  /* box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ;  */
+  filter: drop-shadow(1em 1em 0.5em #605040);
+  /* border: 10px solid rgba(164, 144, 108, 1); */
+  /* border-radius: 20px; */
 }
 .kevbot-intro p {
   font-size: 0.75em;
@@ -50,42 +61,44 @@
   font-weight: bold;
 }
 .kevbot-intro .text-color {
+  /* color: #d0d0d0; */
   color: #308030;
 }
 .kevbot-intro .bg-color {
+  /* background: #308030; */
   background: #d0d0d0;
 }
 
 #kevbot-0 {
-  width: 195px;
-  animation: rotation 0.5s linear 0s 5 normal forwards running,
-    location0 25s linear 0s 1 normal forwards running;
+  width: 190px;
+  animation: rotation 0.2s linear 0s 5 normal forwards running,
+    location0 10s linear 0s 1 normal forwards running;
 }
 
 #kevbot-1 {
-  width: 150px;
-  animation: rotation 0.5s linear 5s 5 normal forwards running,
-    location1 25s linear 0s 1 normal forwards running;
+  width: 140px;
+  animation: rotation 0.2s linear 2s 5 normal forwards running,
+    location1 10s linear 0s 1 normal forwards running;
 }
 #kevbot-2 {
-  width: 150px;
-  animation: rotation 0.5s linear 10s 5 normal forwards running,
-    location2 25s linear 0s 1 normal forwards running;
+  width: 140px;
+  animation: rotation 0.2s linear 4s 5 normal forwards running,
+    location2 10s linear 0s 1 normal forwards running;
 }
 #kevbot-3 {
-  width: 150px;
-  animation: rotation 0.5s linear 15s 5 normal forwards running,
-    location3 25s linear 0s 1 normal forwards running;
+  width: 140px;
+  animation: rotation 0.2s linear 6s 5 normal forwards running,
+    location3 10s linear 0s 1 normal forwards running;
 }
 #kevbot-4 {
-  width: 150px;
-  animation: rotation 0.5s linear 20s 5 normal forwards running,
-    location4 25s linear 0s 1 normal forwards running;
+  width: 140px;
+  animation: rotation 0.2s linear 8s 5 normal forwards running,
+    location4 10s linear 0s 1 normal forwards running;
 }
 
 @keyframes rotation {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0);
   }
   to {
     transform: rotate(360deg);
@@ -123,11 +136,11 @@
     left: 60vw;
   }
   30% {
-    top: 58vh;
+    top: 60vh;
     left: 2vw;
   }
   60% {
-    top: 58vh;
+    top: 60vh;
     left: 2vw;
   }
   65% {
@@ -157,11 +170,11 @@
     left: 60vw;
   }
   50% {
-    top: 58vh;
+    top: 60vh;
     left: 52vw;
   }
   80% {
-    top: 58vh;
+    top: 60vh;
     left: 52vw;
   }
   85% {
@@ -191,11 +204,11 @@
     left: 30vw;
   }
   70% {
-    top: 58vh;
+    top: 60vh;
     left: 2vw;
   }
   100% {
-    top: 58vh;
+    top: 60vh;
     left: 2vw;
   }
 }
@@ -217,11 +230,11 @@
     left: 60vw;
   }
   90% {
-    top: 58vh;
+    top: 60vh;
     left: 52vw;
   }
   100% {
-    top: 58vh;
+    top: 60vh;
     left: 52vw;
   }
 }

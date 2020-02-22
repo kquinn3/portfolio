@@ -1,22 +1,22 @@
-#kevbot-skills {
+#skills-bot {
   position: absolute;
   width: 600px;
-  animation: rotation 0.25s linear 0s 8 normal forwards running,
+  animation: rotation-skills 0.25s linear 0s 8 normal forwards running,
     location 2s linear 0s 1 normal forwards running;
 }
 
-#kevbot-skills .bot-card {
+#skills-bot .skills-card {
   background-color: rgba(208, 208, 208, 0.2);
   border: 10px outset rgba(164, 144, 108, 0.83);
   border-radius: 20px;
 }
-#kevbot-skills img {
+#skills-bot img {
   margin: 0 auto;
   width: 300px;
   height: 300px;
   object-fit: contain;
 }
-#kevbot-skills .text-div {
+#skills-bot .text-div {
   height: 350px;
   font-size: 1.1em;
   line-height: 1.4em;
@@ -25,7 +25,7 @@
   background: #d0d0d0;
 }
 
-@keyframes rotation {
+@keyframes rotation-skills {
   from {
     transform: rotate(0deg);
   }

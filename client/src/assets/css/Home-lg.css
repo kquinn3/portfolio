@@ -7,19 +7,24 @@
     object-fit: contain;
   }
   #kevbot-0 .text-div {
-    height: 160px;
+    height: 140px;
   }
   #kevbot-1 .text-div,
   #kevbot-2 .text-div,
   #kevbot-3 .text-div,
   #kevbot-4 .text-div {
-    height: 90px;
+    height: 80px;
   }
-
   .kevbot-intro {
-    background-color: rgba(208, 208, 208, 0.2);
-    border: 15px outset rgba(164, 144, 108, 0.83);
-    border-radius: 25px;
+    background-color: rgba(208, 208, 208, 1);
+    /* border: 1em solid #a4906c; */
+    border-top: solid #605040 0.75em;
+    border-left: solid #605040 0.75em;
+    /* border-left: solid #a4906c 1em; */
+    /* box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ;  */
+    filter: drop-shadow(1.25em 1.25em 0.5em #605040);
+    /* border: 10px solid rgba(164, 144, 108, 1); */
+    /* border-radius: 20px; */
   }
   .kevbot-intro p {
     font-size: 1em;
@@ -29,29 +34,29 @@
 
   #kevbot-0 {
     width: 475px;
-    animation: rotation 0.5s linear 0s 5 normal forwards running,
-      location0 25s linear 0s 1 normal forwards running;
+    /* animation: rotation 0.5s linear 0s 5 normal forwards running,
+      location0 25s linear 0s 1 normal forwards running; */
   }
 
   #kevbot-1 {
     width: 475px;
-    animation: rotation 0.5s linear 5s 5 normal forwards running,
-      location1 25s linear 0s 1 normal forwards running;
+    /* animation: rotation 0.5s linear 5s 5 normal forwards running,
+      location1 25s linear 0s 1 normal forwards running; */
   }
   #kevbot-2 {
     width: 475px;
-    animation: rotation 0.5s linear 10s 5 normal forwards running,
-      location2 25s linear 0s 1 normal forwards running;
+    /* animation: rotation 0.5s linear 10s 5 normal forwards running,
+      location2 25s linear 0s 1 normal forwards running; */
   }
   #kevbot-3 {
     width: 475px;
-    animation: rotation 0.5s linear 15s 5 normal forwards running,
-      location3 25s linear 0s 1 normal forwards running;
+    /* animation: rotation 0.5s linear 15s 5 normal forwards running,
+      location3 25s linear 0s 1 normal forwards running; */
   }
   #kevbot-4 {
     width: 475px;
-    animation: rotation 0.5s linear 20s 5 normal forwards running,
-      location4 25s linear 0s 1 normal forwards running;
+    /* animation: rotation 0.5s linear 20s 5 normal forwards running,
+      location4 25s linear 0s 1 normal forwards running; */
   }
 
   @keyframes location0 {

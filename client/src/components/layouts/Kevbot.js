@@ -9,8 +9,8 @@ const Kevbot = ({ ID, IMG, ALT, TXT, LINK }) => {
           {/* Extra Small <576px */}
           <div id={ID} className="kevbot-intro card d-sm-none">
             <img className="card-img" src={IMG} alt={ALT} />
-            <div className="p-2 text-left text-div text-color bg-color">
-              <p>{TXT}</p>
+            <div className="text-center text-div text-color bg-color">
+              <p className="my-2 px-2">{TXT}</p>
             </div>
           </div>
 
@@ -20,8 +20,8 @@ const Kevbot = ({ ID, IMG, ALT, TXT, LINK }) => {
             className="kevbot-intro card d-none d-sm-block d-md-none"
           >
             <img className="card-img" src={IMG} alt={ALT} />
-            <div className="p-2 text-left  text-div text-color bg-color">
-              <p>{TXT}</p>
+            <div className="text-center text-div text-color bg-color">
+              <p className="my-3 px-3">{TXT}</p>
             </div>
           </div>
 
@@ -31,8 +31,8 @@ const Kevbot = ({ ID, IMG, ALT, TXT, LINK }) => {
             className="kevbot-intro card d-none d-md-block d-lg-none"
           >
             <img className="card-img" src={IMG} alt={ALT} />
-            <div className="p-2 text-left  text-div text-color bg-color">
-              <p>{TXT}</p>
+            <div className="text-center text-div text-color bg-color">
+              <p className="my-3 px-3">{TXT}</p>
             </div>
           </div>
 
@@ -42,16 +42,16 @@ const Kevbot = ({ ID, IMG, ALT, TXT, LINK }) => {
             className="kevbot-intro card d-none d-lg-block d-xl-none"
           >
             <img className="card-img" src={IMG} alt={ALT} />
-            <div className="p-2 text-left  text-div text-color bg-color">
-              <p>{TXT}</p>
+            <div className="text-center text-div text-color bg-color">
+              <p className="my-3 px-4">{TXT}</p>
             </div>
           </div>
 
           {/* Xtra Large > 1200px */}
           <div id={ID} className="kevbot-intro card d-none d-xl-block">
             <img className="card-img" src={IMG} alt={ALT} />
-            <div className="p-2 text-left  text-div text-color bg-color">
-              <p>{TXT}</p>
+            <div className="text-center text-div text-color bg-color">
+              <p className="my-3 px-4">{TXT}</p>
             </div>
           </div>
         </Link>

@@ -16,11 +16,10 @@
     height: 160px;
   }
 
-  .kevbot-intro {
-    background-color: rgba(208, 208, 208, 0.2);
-    border: 15px outset rgba(164, 144, 108, 0.83);
+  /* .kevbot-intro {
+    border: 15px outset rgba(164, 144, 108, 1);
     border-radius: 30px;
-  }
+  } */
   .kevbot-intro p {
     font-size: 0.9em;
     line-height: 1.25em;
@@ -29,29 +28,29 @@
 
   #kevbot-0 {
     width: 270px;
-    animation: rotation 0.5s linear 0s 5 normal forwards running,
-      location0 25s linear 0s 1 normal forwards running;
+    /* animation: rotation 0.5s linear 0s 5 normal forwards running,
+      location0 25s linear 0s 1 normal forwards running; */
   }
 
   #kevbot-1 {
     width: 240px;
-    animation: rotation 0.5s linear 5s 5 normal forwards running,
-      location1 25s linear 0s 1 normal forwards running;
+    /* animation: rotation 0.5s linear 5s 5 normal forwards running,
+      location1 25s linear 0s 1 normal forwards running; */
   }
   #kevbot-2 {
     width: 240px;
-    animation: rotation 0.5s linear 10s 5 normal forwards running,
-      location2 25s linear 0s 1 normal forwards running;
+    /* animation: rotation 0.5s linear 10s 5 normal forwards running,
+      location2 25s linear 0s 1 normal forwards running; */
   }
   #kevbot-3 {
     width: 240px;
-    animation: rotation 0.5s linear 15s 5 normal forwards running,
-      location3 25s linear 0s 1 normal forwards running;
+    /* animation: rotation 0.5s linear 15s 5 normal forwards running,
+      location3 25s linear 0s 1 normal forwards running; */
   }
   #kevbot-4 {
     width: 240px;
-    animation: rotation 0.5s linear 20s 5 normal forwards running,
-      location4 25s linear 0s 1 normal forwards running;
+    /* animation: rotation 0.5s linear 20s 5 normal forwards running,
+      location4 25s linear 0s 1 normal forwards running; */
   }
 
   @keyframes location0 {
