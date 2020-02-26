@@ -29,6 +29,7 @@ const Navbar = () => {
     <Fragment>
       <nav className="bg-main navbar fixed-top navbar-expand-lg navbar-dark mb-3">
         {/* <div className="container"> */}
+        <p className="navbar-brand">Kevin Quinn</p>
         <button
           className="navbar-toggler"
           data-toggle="collapse"
@@ -37,22 +38,14 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse bg-main" id="navbarNav">
-          <ul className="navbar-nav mx-auto">
+          <ul className="navbar-nav">
+            {/* <ul className="navbar-nav mx-auto"> */}
             <NavbarItem link="/" iName="ml-1 fas fa-home" title="Home" />
-            <NavbarItem
-              link="/skills"
-              iName="ml-1 fa fa-cogs"
-              title="Software Skills"
-            />
+            <NavbarItem link="/skills" iName="ml-1 fa fa-cogs" title="Skills" />
             <NavbarItem
               link="/kpq"
               iName="ml-1 far fa-handshake"
-              title="KPQ Solutions"
-            />
-            <NavbarItem
-              link="/projects"
-              iName="ml-1 fas fa-project-diagram"
-              title="Other Projects"
+              title="KPQ Sol"
             />
             <NavbarItem
               link="/information"
