@@ -18,13 +18,8 @@ export const skillsAnimation = async (changes, constants) => {
   const { offset, rollItem, speed, rollHole } = constants;
   const { start, mid, stop, rollDisplay } = changes;
   display(rollItem, "block");
-  display(rollHole.id, "block");
-  await golfHole(
-    rollHole.id,
-    stop.x - offset,
-    stop.y - offset,
-    rollHole.radius
-  );
+  display(rollHole, "block");
+  await golfHole(rollHole, stop.x - offset, stop.y - offset);
   await golfRoll(rollItem, start, mid, speed.steps, speed.del, "none", offset);
   await golfRoll(
     rollItem,
@@ -36,17 +31,14 @@ export const skillsAnimation = async (changes, constants) => {
     offset
   );
   display(rollItem, "none");
-  display(rollHole.id, "none");
+  display(rollHole, "none");
 };
 
-// golfHole params are (string of querySelect, left vw, top vh, radius in pixels)
-export const golfHole = (qs, x, y, rad) => {
+// golfHole params are (string of querySelect, left vw, top vh)
+export const golfHole = (qs, x, y) => {
   const hole = document.querySelector(qs);
   hole.style.left = x.toString() + "vw";
   hole.style.top = y.toString() + "vh";
-  hole.style.height = (rad * 2).toString() + "px";
-  hole.style.width = (rad * 2).toString() + "px";
-  hole.style.borderRadius = rad.toString() + "px";
 };
 // golfRoll params are (string of querySelect, startposition, finish position, #steps, delay(ms), string of second qs);
 export const golfRoll = async (qs, start, stop, step, del, qs2, off) => {

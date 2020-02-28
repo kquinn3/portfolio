@@ -50,6 +50,11 @@
   color: white;
   /* text-shadow: 20px 20px 20px black; */
 }
+@media (max-height: 812px) {
+  .landing .card {
+    top: calc(100vh - 240px);
+  }
+}
 
 @media (min-width: 768px) {
   .intro-text {
