@@ -83,5 +83,35 @@ export const display = (p, s) => {
   document.querySelector(p).style.display = s;
 };
 
-// console.log("width", document.documentElement.clientWidth);
-// console.log("height", document.documentElement.clientHeight);
+export const getSquares = (startX, stopX, startY, stopY, num, gap) => {
+  const width = document.documentElement.clientWidth;
+  const height = document.documentElement.clientHeight;
+  const aspect = width / height;
+  const squareWidth = (stopX - startX) / num;
+  const squareHeight = (stopY - startY) / num;
+
+  const pixelSquare =
+    aspect >= 1
+      ? (height * (squareHeight - gap)) / 100
+      : (width * (squareWidth - gap)) / 100;
+
+  const percentOffsetX = 0.5 * (squareWidth - (100 * pixelSquare) / width);
+  const percentOffsetY = 0.5 * (squareHeight - (100 * pixelSquare) / height);
+  console.log("width", width);
+  console.log("height", height);
+  console.log("squareWidth", squareWidth);
+  console.log("squareHeight", squareHeight);
+  console.log("pixelSquare", pixelSquare);
+  console.log("percentOffsetX", percentOffsetX);
+  console.log("percentOffsetY", percentOffsetY);
+
+  let squareX = [];
+  let squareY = [];
+
+  //Calculate x and y points
+  for (let i = 0; i < num; i++) {
+    squareX[i] = percentOffsetX + startX + i * squareWidth;
+    squareY[i] = percentOffsetY + startY + i * squareHeight;
+  }
+  return { squareX, squareY, pixelSquare };
+};
