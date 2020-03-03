@@ -1,0 +1,71 @@
+.webapps {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.webapps:before {
+  content: "";
+  position: fixed;
+  background: url(../img/webapps.JPG) no-repeat center center fixed;
+  background-size: cover;
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.webapps .bg-color {
+  background-color: rgba(48, 128, 48, 1);
+}
+.webapps .bg-img {
+  background-color: rgba(0, 192, 240, 0.2);
+}
+
+.webapps .fg-color {
+  color: #d0d0d0;
+}
+
+#ubci .card,
+#coininv .card,
+#blanda .card,
+#kpqsol .card,
+#inprogress .card,
+#sandbox .card {
+  height: 25vh;
+}
+#coininv:hover,
+#blanda:hover,
+#kpqsol:hover,
+#inprogress:hover,
+#sandbox:hover,
+#ubci:hover {
+  animation: rotate 0.2s linear 0s 1 normal;
+}
+
+#ubci .card-img,
+#coininv .card-img,
+#blanda .card-img,
+#kpqsol .card-img,
+#inprogress .card-img,
+#sandbox .card-img {
+  width: 60%;
+  height: 60%;
+  margin: 0 auto;
+  object-fit: contain;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

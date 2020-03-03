@@ -47,9 +47,9 @@ const Navbar = () => {
                 title="Skills"
               />
               <NavbarItem
-                link="/kpq"
+                link="/webapps"
                 iName="ml-1 far fa-handshake"
-                title="KPQ Sol"
+                title="Web Apps"
               />
               <NavbarItem
                 link="/information"

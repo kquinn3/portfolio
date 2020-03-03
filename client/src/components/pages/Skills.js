@@ -179,7 +179,7 @@ const Skills = () => {
             <p className="mx-1">{skills4}</p>
             <p className="mx-1">{skills5}</p>
             <p className="mx-1">{skills6}</p>
-            <Link to="/kpq">
+            <Link to="/webapps">
               {/* <button id="skills-button" class="btn btn-sm btn-block"> */}
               <button id="skills-button" className="btn-block">
                 Learn More
