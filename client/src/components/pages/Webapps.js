@@ -9,7 +9,7 @@ import imgKPQsol from "../../assets/img/coininv.PNG";
 import imgInprogress from "../../assets/img/coininv.PNG";
 import imgSandbox from "../../assets/img/sandbox.PNG";
 
-const WebApps = () => {
+const Webapps = () => {
   const modalUbci = "modalUbci";
   const modalIdUbci = `#${modalUbci}`;
   const modalCoin = "modalCoin";
@@ -173,4 +173,4 @@ const WebApps = () => {
     </Fragment>
   );
 };
-export default WebApps;
+export default Webapps;
