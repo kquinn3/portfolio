@@ -28,6 +28,9 @@ h1 {
   font-size: 2.5em;
   font-weight: bold;
 }
+.no-pad {
+  padding: 0;
+}
 
 /* Width classes */
 .w-min-120 {
@@ -83,6 +86,9 @@ h1 {
 }
 .nav li {
   display: inline-block;
+}
+.nav-item:hover {
+  background-color: rgba(16, 80, 16, 1);
 }
 .nav-link {
   color: rgba(255, 255, 255, 0.8) !important;

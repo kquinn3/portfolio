@@ -53,10 +53,54 @@
 #kpqsol .card-img,
 #inprogress .card-img,
 #sandbox .card-img {
-  width: 60%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+}
+.just-word {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.webapp .overlay {
+  background-color: rgba(48, 128, 48, 1);
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.9;
+}
+.outline:hover {
+  background-color: rgba(16, 80, 16, 1);
+  opacity: 1;
+}
+.outline {
+  background-color: rgba(48, 128, 48, 1);
+  color: white !important;
+  opacity: 0.8;
+}
+.webapp .h-60pct {
   height: 60%;
-  margin: 0 auto;
-  object-fit: contain;
+}
+.webapp .outline-op-25 {
+  background-color: rgba(48, 128, 48, 1);
+  color: white !important;
+  opacity: 0.25;
+}
+.header-color {
+  background-color: rgba(48, 128, 48, 1);
+  color: white !important;
+  opacity: 1;
+}
+.modal-background {
+  background-color: rgba(0, 192, 240, 0.2);
+}
+.noPBM {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.modal-font {
+  font-size: 1.25em;
+  line-height: 1.25em;
 }
 @keyframes rotate {
   0% {
