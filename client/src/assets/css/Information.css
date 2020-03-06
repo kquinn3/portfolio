@@ -19,3 +19,27 @@
   left: 0;
   z-index: -1;
 }
+.information .t-color {
+  background-color: rgba(48, 128, 48, 1);
+  color: white !important;
+  opacity: 1;
+}
+#automation:hover,
+#firmware:hover,
+#yield:hover,
+#publication:hover,
+#production:hover,
+#patent:hover {
+  animation: rotateCC 0.2s linear 0s 1 normal;
+}
+@keyframes rotateCC {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

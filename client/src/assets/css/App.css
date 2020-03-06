@@ -116,6 +116,23 @@ h1 {
 .w-15p {
   width: 15vw;
 }
+.noPBM {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.modal-background {
+  background-color: rgba(0, 192, 240, 0.2);
+}
+
+.modal-font {
+  font-size: 1.25em;
+  line-height: 1.25em;
+}
+.just-word {
+  text-align: justify;
+  text-justify: inter-word;
+}
 @media (min-width: 992px) {
   .nav-item {
     width: 20%;
