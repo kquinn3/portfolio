@@ -106,6 +106,10 @@ h1 {
   color: #308030;
   background: #d0d0d0;
 }
+.header-color {
+  background: #308030;
+  color: #d0d0d0;
+}
 .full-screen {
   height: 100vh;
   width: 100vw;
@@ -121,10 +125,17 @@ h1 {
   margin: 0;
   border: 0;
 }
+.nom {
+  margin: 0;
+}
 .modal-background {
   background-color: rgba(0, 192, 240, 0.2);
 }
-
+.outline {
+  background-color: rgba(48, 128, 48, 1);
+  color: white !important;
+  opacity: 0.8;
+}
 .modal-font {
   font-size: 1.25em;
   line-height: 1.25em;

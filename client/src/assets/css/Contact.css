@@ -1,0 +1,22 @@
+.contact {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  /* height: 100vh; */
+  z-index: -1;
+}
+
+.contact:before {
+  content: "";
+  position: fixed;
+  background: url(../img/air_cropped.jpg) no-repeat center center fixed;
+  background-size: cover;
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

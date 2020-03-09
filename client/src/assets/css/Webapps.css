@@ -4,7 +4,8 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
+  z-index: -1;
 }
 
 .webapps:before {
@@ -19,15 +20,9 @@
   left: 0;
   z-index: -1;
 }
-.webapps .bg-color {
-  background-color: rgba(48, 128, 48, 1);
-}
-.webapps .bg-img {
-  background-color: rgba(0, 192, 240, 0.2);
-}
-
-.webapps .fg-color {
-  color: #d0d0d0;
+.webapp .t-color {
+  background: rgba(48, 128, 48, 1);
+  color: white;
 }
 
 #ubci .card,
@@ -36,8 +31,9 @@
 #kpqsol .card,
 #inprogress .card,
 #sandbox .card {
-  height: 25vh;
-  width: 25vh;
+  /* height: 300px; */
+  width: 300px;
+  /* min-height: 350px; */
 }
 #coininv:hover,
 #blanda:hover,
@@ -54,38 +50,10 @@
 #kpqsol .card-img,
 #inprogress .card-img,
 #sandbox .card-img {
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 300px;
   margin: 0;
   object-fit: cover;
-}
-
-.webapp .overlay {
-  background-color: rgba(48, 128, 48, 1);
-  color: rgba(255, 255, 255, 1);
-  opacity: 0.9;
-}
-.outline:hover {
-  background-color: rgba(16, 80, 16, 1);
-  opacity: 1;
-}
-.outline {
-  background-color: rgba(48, 128, 48, 1);
-  color: white !important;
-  opacity: 0.8;
-}
-.webapp .h-60pct {
-  height: 60%;
-}
-.webapp .outline-op-25 {
-  background-color: rgba(48, 128, 48, 1);
-  color: white !important;
-  opacity: 0.25;
-}
-.header-color {
-  background-color: rgba(48, 128, 48, 1);
-  color: white !important;
-  opacity: 1;
 }
 
 @keyframes rotate {

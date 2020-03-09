@@ -5,10 +5,10 @@ import "../../assets/css/Webapps.css";
 const InfoCard = ({ ID, TITLE, IMG, ALT, MODAL }) => {
   return (
     <Fragment>
-      <div id={ID} className="col-4 otherapp">
+      <div id={ID} className="m-2 otherapp">
         <div className="card">
           <button className="noPBM" data-toggle="modal" data-target={MODAL}>
-            <div className="card-title t-color">{TITLE}</div>
+            <div className="card-title nom p-2 t-color">{TITLE}</div>
             <img
               className="card-img img-fluid text-center"
               src={IMG}

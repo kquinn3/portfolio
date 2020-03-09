@@ -23,6 +23,61 @@ const Information = () => {
   const modalPatent = "modalPatent";
   const modalIdPatent = `#${modalPatent}`;
 
+  const card1 = (
+    <InfoCard
+      ID="automation"
+      TITLE="Manufacturing Automation"
+      IMG={imgAutomation}
+      ALT="Factory equipment"
+      MODAL={modalIdAutomation}
+    ></InfoCard>
+  );
+  const card2 = (
+    <InfoCard
+      ID="firmware"
+      TITLE="IoT Firmware Development"
+      IMG={imgFirmware}
+      ALT="parts with Iot devices"
+      MODAL={modalIdFirmware}
+    ></InfoCard>
+  );
+  const card3 = (
+    <InfoCard
+      ID="yield"
+      TITLE="Manufacturing Solutions"
+      IMG={imgYield}
+      MODAL={modalIdYield}
+      ALT="computer code on a monitor"
+    ></InfoCard>
+  );
+  const card4 = (
+    <InfoCard
+      ID="publication"
+      TITLE="Technical Publication"
+      IMG={imgPublication}
+      ALT="Factory equipment"
+      MODAL={modalIdPublication}
+    ></InfoCard>
+  );
+  const card5 = (
+    <InfoCard
+      ID="production"
+      TITLE="Manufacturing Testing"
+      IMG={imgProduction}
+      ALT="Person operating computer in clean room"
+      MODAL={modalIdProduction}
+    ></InfoCard>
+  );
+  const card6 = (
+    <InfoCard
+      ID="patent"
+      TITLE="Semiconductor Patents"
+      IMG={imgPatent}
+      ALT="computer code on a monitor"
+      MODAL={modalIdPatent}
+    ></InfoCard>
+  );
+
   const bodyAutomation = (
     <Fragment>
       <div className="card my-3">
@@ -277,58 +332,20 @@ const Information = () => {
 
   return (
     <Fragment>
-      <div className="information">
-        <div className="container">
-          <div className="h-10v"></div>
-          <div className="text-center mb-5">
-            <h1>Additional Projects</h1>
-          </div>
-          <div className="d-none d-lg-flex row h-25v mb-5 text-center">
-            <InfoCard
-              ID="automation"
-              TITLE="Manufacturing Automation"
-              IMG={imgAutomation}
-              ALT="Factory equipment"
-              MODAL={modalIdAutomation}
-            ></InfoCard>
-            <InfoCard
-              ID="firmware"
-              TITLE="IoT Firmware Development"
-              IMG={imgFirmware}
-              ALT="parts with Iot devices"
-              MODAL={modalIdFirmware}
-            ></InfoCard>
-            <InfoCard
-              ID="yield"
-              TITLE="Manufacturing Software Solutions"
-              IMG={imgYield}
-              MODAL={modalIdYield}
-              ALT="computer code on a monitor"
-            ></InfoCard>
-          </div>
-          <div className="d-none d-lg-flex row h-25v mb-5 text-center">
-            <InfoCard
-              ID="publication"
-              TITLE="Technical Publication"
-              IMG={imgPublication}
-              ALT="Factory equipment"
-              MODAL={modalIdPublication}
-            ></InfoCard>
-            <InfoCard
-              ID="production"
-              TITLE="High Volume Manufacturing Testing"
-              IMG={imgProduction}
-              ALT="Person operating computer in clean room"
-              MODAL={modalIdProduction}
-            ></InfoCard>
-            <InfoCard
-              ID="patent"
-              TITLE="Semiconductor Patents"
-              IMG={imgPatent}
-              ALT="computer code on a monitor"
-              MODAL={modalIdPatent}
-            ></InfoCard>
-          </div>
+      <div className="information"></div>
+      <div className="container mx-auto">
+        <div className="h-10v"></div>
+        <div className="text-center my-2">
+          <h1>Additional Projects</h1>
+        </div>
+
+        <div className="d-flex flex-wrap justify-content-center">
+          {card1}
+          {card2}
+          {card3}
+          {card4}
+          {card5}
+          {card6}
         </div>
       </div>
       <InfoModal

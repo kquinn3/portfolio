@@ -4,7 +4,8 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
+  z-index: -1;
 }
 
 .information:before {
@@ -12,18 +13,27 @@
   position: fixed;
   background: url(../img/air_cropped.jpg) no-repeat center center fixed;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 1;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
   z-index: -1;
 }
-.information .t-color {
+.otherapp .t-color {
   background-color: rgba(48, 128, 48, 1);
   color: white !important;
   opacity: 1;
 }
+#automation .card,
+#firmware .card,
+#yield .card,
+#publication .card,
+#production .card,
+#patent .card {
+  width: 300px;
+}
+
 #automation:hover,
 #firmware:hover,
 #yield:hover,

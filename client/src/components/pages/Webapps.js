@@ -2,11 +2,11 @@ import React, { Fragment } from "react";
 import WebCard from "../layouts/WebCard";
 import WebModal from "../layouts/WebModal";
 import "../../assets/css/Webapps.css";
-import imgUbci from "../../assets/img/ubci.PNG";
+import imgUbci from "../../assets/img/ubci.jpeg";
 import imgCoin from "../../assets/img/coininv.PNG";
 import imgBlanda from "../../assets/img/blanda.PNG";
-import imgKPQsol from "../../assets/img/coininv.PNG";
-import imgInprogress from "../../assets/img/coininv.PNG";
+import imgKPQsol from "../../assets/img/kpqsolutions.PNG";
+import imgRealEstate from "../../assets/img/real_estate.jpg";
 import imgSandbox from "../../assets/img/sandbox.PNG";
 
 const Webapps = () => {
@@ -39,12 +39,12 @@ const Webapps = () => {
   ];
   const pKPQsol = [
     "I developed an LLC called KPQ Solutions. I love meeting with clients, determining their needs and developing fail proof solutions. ",
-    "KPQ Solutiions provide full stack web development and deployment, web testing automation and scripting to automate tasks ",
+    "KPQ Solutions provide full stack web development and deployment, web testing automation and scripting to automate tasks ",
     "I am exploring the idea of creating short videos on web development for non web developers. "
   ];
   const pInprogress = [
-    "Currently, I am working on a Project Task Application which allows the user to create any type of task including software features and bugs. The projects can either be stored on a local client file or on a database. The motivation behind this is to be able to track and modify any action items to ensure schedules are met. ",
-    "This is going to have alot of front end details and will be my first application to include 'drag and drop' features. ",
+    "Currently, I am working on a Real Estate project. I will provide more details soon. ",
+    "This will be my biggest project to date. ",
     "To be determined "
   ];
   const pSandbox = [
@@ -58,7 +58,7 @@ const Webapps = () => {
       <WebCard
         ID="ubci"
         TITLE="U Broadcast-It"
-        SUBTITLE="Live Sports Tracker"
+        // SUBTITLE="Live Sports Tracker"
         IMG={imgUbci}
         ALT="U-Broadcast-It landing page"
         MODAL={modalIdUbci}
@@ -70,7 +70,7 @@ const Webapps = () => {
       <WebCard
         ID="coininv"
         TITLE="Coin Inventory"
-        SUBTITLE="Hobby"
+        // SUBTITLE="Hobby"
         IMG={imgCoin}
         ALT="Coin Inventory landing page"
         MODAL={modalIdCoin}
@@ -82,7 +82,7 @@ const Webapps = () => {
       <WebCard
         ID="blanda"
         TITLE="Bell, Lewis & Assoc"
-        SUBTITLE="Website For A Business"
+        // SUBTITLE="Website For A Business"
         IMG={imgBlanda}
         ALT="Bell, Lewis & Associates landing page"
         MODAL={modalIdBlanda}
@@ -94,7 +94,7 @@ const Webapps = () => {
       <WebCard
         ID="kpqsol"
         TITLE="KPQ Solutions, LLC"
-        SUBTITLE="My Company"
+        // SUBTITLE="My Company"
         IMG={imgKPQsol}
         ALT="KPQ Solutions"
         MODAL={modalIdKPQsol}
@@ -105,9 +105,9 @@ const Webapps = () => {
     <Fragment>
       <WebCard
         ID="inprogress"
-        TITLE="In Progress"
-        SUBTITLE="Action Item Organizer"
-        IMG={imgInprogress}
+        TITLE="Real Estate App"
+        // SUBTITLE="Real Estate App"
+        IMG={imgRealEstate}
         ALT="Action Tracker"
         MODAL={modalIdInprogress}
       ></WebCard>
@@ -120,7 +120,7 @@ const Webapps = () => {
         TITLE="Sandbox"
         IMG={imgSandbox}
         ALT="Sandbox landing page"
-        SUBTITLE="Practice Page As Reference"
+        // SUBTITLE="Practice Page As Reference"
         MODAL={modalIdSandbox}
       ></WebCard>
     </Fragment>
@@ -128,22 +128,20 @@ const Webapps = () => {
 
   return (
     <Fragment>
-      <div className="webapps">
-        <div className="container">
-          <div className="h-10v"></div>
-          <div className="text-center mb-5">
-            <h1>Web Applications</h1>
-          </div>
-          <div className="d-none d-lg-flex row h-25v mb-5 text-center">
-            {card1}
-            {card2}
-            {card3}
-          </div>
-          <div className="d-none d-lg-flex row h-25v">
-            {card4}
-            {card5}
-            {card6}
-          </div>
+      <div className="webapps"></div>
+      <div className="container mx-auto">
+        <div className="h-10v"></div>
+        <div className="text-center my-2">
+          <h1>Web Applications</h1>
+        </div>
+
+        <div className="d-flex flex-wrap justify-content-center">
+          {card1}
+          {card2}
+          {card3}
+          {card4}
+          {card5}
+          {card6}
         </div>
       </div>
 

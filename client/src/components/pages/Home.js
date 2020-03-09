@@ -49,7 +49,7 @@ const Home = () => {
             <p className="m-2 intro-text">{intro3}</p>
             <p className="m-2 intro-text">{intro4}</p>
             <Link to="/skills">
-              <button id="intro-button" class="btn btn-sm btn-block">
+              <button id="intro-button" className="btn btn-sm btn-block">
                 Click to Learn More
               </button>
             </Link>
