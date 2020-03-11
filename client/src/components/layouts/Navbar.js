@@ -17,7 +17,7 @@ const NavbarItem = ({ link, iName, title }) => {
           to={link}
         >
           <i className={iName}></i>
-          <span>{title}</span>
+          <span className="mb-0">{title}</span>
         </Link>
       </li>
     </Fragment>
@@ -27,7 +27,7 @@ const NavbarItem = ({ link, iName, title }) => {
 const Navbar = () => {
   return (
     <Fragment>
-      <nav className="bg-main navbar fixed-top navbar-expand-lg navbar-dark mb-3">
+      <nav className="bg-main navbar fixed-top navbar-expand-lg navbar-dark nopadtb">
         <div className="container">
           <p className="navbar-brand">Kevin Quinn</p>
           <button

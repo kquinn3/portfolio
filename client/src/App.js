@@ -25,6 +25,7 @@ const App = () => {
           <Route exact path="/webapps" component={Webapps} />
           <Route exact path="/information" component={Information} />
           <Route exact path="/contact" component={Contact} />
+          {/* <Route exact path="/download" component={Download} /> */}
           <Route component={NotFound} />
         </Switch>
       </Router>

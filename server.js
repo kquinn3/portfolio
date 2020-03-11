@@ -1,15 +1,18 @@
 const express = require("express");
-const colors = require("colors");
+const cors = require("cors");
+const fs = require("fs");
 const path = require("path");
 
 const app = express();
+app.use(cors());
 
 // Serve static assets in production
 
-// app.use(express.static(path.join(__dirname, "public")));
-// app.get("/download", (req, res) => {
-//   res.download(path.join(__dirname, "/downloads/kevinquinn.pdf"));
-// });
+app.get("/resume", (req, res) => {
+  let file = fs.createReadStream("./public/kevinquinn.pdf");
+  file.pipe(res);
+});
+
 app.use(express.static(path.join(__dirname, "client/build")));
 app.get("/*", (req, res) =>
   res.sendFile(path.join(__dirname, "client/build", "index.html"))

@@ -348,6 +348,7 @@ const Information = () => {
           {card6}
         </div>
       </div>
+      <div className="h-10v"></div>
       <InfoModal
         MODAL={modalAutomation}
         TITLE="Manufacturing Automation"
