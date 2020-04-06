@@ -4,6 +4,7 @@
   "description": "Full Stack MERN application containing my portfolio",
   "main": "server.js",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "NODE_ENV=production node server",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
@@ -24,6 +25,10 @@
   },
   "devDependencies": {
     "concurrently": "^5.1.0",
+    "minimist": "^1.2.5",
     "nodemon": "^2.0.2"
+  },
+  "resolutions": {
+    "minimist": "^1.2.5"
   }
 }
